@@ -7,8 +7,13 @@
 }
 
 html {
-  overflow: hidden;
+  overflow-x:hidden; 
   background-color: black;
+}
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 .ball {
@@ -103,3 +108,95 @@ h1 {
     color: aqua;
     text-decoration: none;
 }
+
+/*Media queries*/
+
+@media screen and (min-width: 375px) and (max-width: 812px) {
+
+  html, body {
+        max-width: 100% !important;
+        overflow: hidden !important;
+ }
+
+ .sobre {
+    position: static;
+    width: 100px;
+    height: 50px;
+    top: 10%;
+    left: 38%;
+ }
+
+ .wrapper-2 p {
+        font-size: 35px;
+        margin: auto;
+        width: 300px;
+    }
+
+ h1 {
+    font-size: 50px;
+    position: static;
+    top: 10%;
+    left: 27%;
+}
+
+ .go-home {
+    margin-top: 20%;
+}
+}
+
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+
+ .sobre {
+    width: 150px;
+    height: 80px;
+    top: 10%;
+    left: 41%;
+ }
+ .wrapper-2 p {
+    font-size: 40px;
+    margin-top: 20%;
+    width: 600px;
+    margin-left: 15%;
+}
+
+ h1 {
+    font-size: 100px;
+    top: 20%;
+    left: 27%;
+ }
+
+ .go-home {
+    margin-top: 20%;
+ }
+  
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1336px) {
+
+.sobre {
+    width: 150px;
+    height: 80px;
+    top: 10%;
+    left: 41%;
+}
+
+ .wrapper-2 p {
+
+    font-size: 40px;
+    margin-top: 20%;
+    width: 600px;
+    margin-left: 22%;
+}
+
+ h1 {
+    font-size: 100px;
+    top: 20%;
+    left: 32%;
+ }
+
+ .go-home {
+    margin-top: 18%;
+ }
+}
+
